@@ -23,6 +23,8 @@
 
 * support for various data types, including user-defined types
 * support for triggers and stored procedures
+* it runs on multiple operating systems like Windows, LINUX and Mac.
+* it supports different programming languages like C, C++, Python, Ruby, Perl etc.
 * rich set of built-in functions
 * support for foreign keys
 * support for views and materialized views
