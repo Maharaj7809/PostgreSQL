@@ -143,7 +143,7 @@ update movies set imdb_ratings = 9.5 where movie_id = 101;
 
 update employees set department = 'IT' where  department is null;
 
-delete from movies where movie_id = 103;
+delete from movies where movie_id = 103; -- Removes rows from a table based on a condition or deletes all rows if no condition is specified
 
 truncate table movies; --much faster then delete  it doesn't need to scan the table for rows to delete.
 
