@@ -185,6 +185,19 @@ end as salary_range
 from employees order by salary desc ;
 
 
+select movie_name , movie_id , movie_genre,
+
+case
+when  imdb_ratings < 10 and imdb_ratings > 9 then 'high'
+when   imdb_ratings > 8.5 and imdb_ratings < 9 then'medium'
+else  'low'
+end 
+
+as imdb_rating from  movies order by imdb_ratings desc ;
+
+
+
+
 select emp_name, department , country , salary from employees where salary >(select avg(salary) from employees);
 
 
