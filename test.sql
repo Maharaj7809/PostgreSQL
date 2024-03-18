@@ -24,10 +24,6 @@ const pool = require("./db");
 
 
 
-insert into movies(movie_id , movie_name , movie_genre, imdb_ratings)
-values (101,'vertigo','Mystry', 'romance', 8.5),(102,'vertigo','Mystry', 'romance', 8.5), (103,'vertigo','Mystry', 'romance', 8.5), (104,'vertigo','Mystry', 'romance', 8.5);
-
-
 create table employees(
 
  emp_id int not null primary key,
@@ -40,7 +36,13 @@ create table employees(
 
 );
 
+
 drop table employees;
+
+
+insert into movies(movie_id , movie_name , movie_genre, movie_type, imdb_ratings)
+values (101,'vertigo','Mystry', 'romance', 8.5),(102,'vertigo','Mystry', 'romance', 8.5), (103,'vertigo','Mystry', 'romance', 8.5), (104,'vertigo','Mystry', 'romance', 8.5);
+
 
 
 select * from movies;
